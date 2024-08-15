@@ -1,0 +1,32 @@
+.containerAbout{
+  margin-top: 50px;
+}
+
+.AboutText{  
+    font-size: 24px;
+}
+
+.text-color-primary{
+  color: #78A083;
+}
+.text-color-secondary{
+  color: rgb(239, 239, 240);
+}
+.card {
+  margin-top: 50px;
+ border-radius: 50px;
+}
+
+
+.background-color{
+ background-color:  #45475c;
+}
+
+
+.fadeInUp{
+  animation:fadeInUp 1s ease backwards;
+}
+@keyframes fadeInUp{
+  0%{transform:translate(0px, 100px); opacity: 0;}
+  100%{transform:translate(0px, 0); opacity: 1;}
+}
