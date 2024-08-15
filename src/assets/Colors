@@ -1,0 +1,10 @@
+.text-color-primary{
+  color: #78A083;
+}
+.text-color-secondary{
+  color: rgb(239, 239, 240);
+}
+
+
+/*primary background : 
+    background-color: #35374B;*/

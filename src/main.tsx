@@ -6,10 +6,12 @@ import { Outlet, RouterProvider } from 'react-router-dom';
 import { router } from './components/routes/routes.tsx';
 import { Navbar } from 'react-bootstrap';
 
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Navbar />
-    <Outlet />
+   <Outlet />
     <RouterProvider router={router}/>
   </React.StrictMode>,
+ 
 )
