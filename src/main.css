@@ -70,8 +70,73 @@ body{
         }
         } 
 
+
+        .typewriter {
+            display: inline-block; /* Ensure the width only covers the text */
+            max-width: 100%; /* Adjust this value based on your text length */
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: 
+              typing 3.5s steps(40, end),
+              blink-caret .75s step-end infinite;
+        }
+        
+          
+          /* The typing effect */
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 50% }
+          }
+          
+          /* The typewriter cursor effect */
+          @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #00a946; }
+          }
+
+          .fadeInLeft{
+            animation: fadeInLeft 0.8s linear 0s 1 normal none;
+          }
+
+          .fadeInLeft1{
+            animation: fadeInLeft 1s linear 0s 1 normal none;
+          }
+        
+          .fadeInLeft2{
+            animation: fadeInLeft 1.2s linear 0s 1 normal none;
+          }
+
+          .fadeInLeft3{
+            animation: fadeInLeft 1.4s linear 0s 1 normal none;
+          }
+
+          .fadeInLeft4{
+            animation: fadeInLeft 1.6s linear 0s 1 normal none;
+          }
+
+          .fadeInLeft5{
+            animation: fadeInLeft 1.8s linear 0s 1 normal none;
+          }
+
+          @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+        
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
         .link{
             text-decoration: none;
             color: #8c8c8f;
         }
         
+
+
