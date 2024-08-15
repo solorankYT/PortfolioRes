@@ -38,12 +38,14 @@ function PortfolioPage() {
     </Col>
 
     <Col lg={4} md={12} className="d-flex justify-content-center">
+    <Link className="link" to={'https://valoplay.netlify.app/'} target="_blank">
     <Card className="cardStyle">
     <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./MNL.png"  />
     <Card.Body>
     <Card.Title className="card-title">MNL Flower Shop</Card.Title>    
     </Card.Body>
     </Card>
+    </Link>
     </Col>
 
     <Col lg={4} md={12} className="d-flex justify-content-center">
