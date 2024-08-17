@@ -80,7 +80,7 @@ body{
             margin: 0 auto;
             letter-spacing: .15em;
             animation: 
-              typing 3.5s steps(40, end),
+              typing 1s steps(50, end),
               blink-caret .75s step-end infinite;
         }
         
@@ -101,25 +101,7 @@ body{
             animation: fadeInLeft 0.8s linear 0s 1 normal none;
           }
 
-          .fadeInLeft1{
-            animation: fadeInLeft 1s linear 0s 1 normal none;
-          }
-        
-          .fadeInLeft2{
-            animation: fadeInLeft 1.2s linear 0s 1 normal none;
-          }
 
-          .fadeInLeft3{
-            animation: fadeInLeft 1.4s linear 0s 1 normal none;
-          }
-
-          .fadeInLeft4{
-            animation: fadeInLeft 1.6s linear 0s 1 normal none;
-          }
-
-          .fadeInLeft5{
-            animation: fadeInLeft 1.8s linear 0s 1 normal none;
-          }
 
           @keyframes fadeInLeft {
             0% {

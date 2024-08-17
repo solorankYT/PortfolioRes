@@ -7,7 +7,7 @@ function PortfolioPage() {
         <Container className="container text-center fadeInUp">
             <h1 className="text-color-primary">Portfolio</h1>
     <Row>
-    <Col lg={4} md={12}  className="fadeInLeft d-flex justify-content-center">
+    <Col lg={4} md={12}  className="d-flex justify-content-center">
     <Card className="cardStyle ">
     <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./Unitrack.png"  />
     <Card.Body>
@@ -17,7 +17,7 @@ function PortfolioPage() {
     </Col>
 
         
-    <Col lg={4} md={12} className="fadeInLeft1 d-flex justify-content-center">  
+    <Col lg={4} md={12} className="d-flex justify-content-center">  
     <Card className="cardStyle">
     <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./joserizal.png"  />
     <Card.Body>
@@ -26,7 +26,7 @@ function PortfolioPage() {
     </Card>
     </Col>
   
-    <Col lg={4} md={12} className="fadeInLeft2 d-flex justify-content-center">
+    <Col lg={4} md={12} className=" d-flex justify-content-center">
     <Link className="link" to={'https://valoplay.netlify.app/'} target="_blank">
     <Card className="cardStyle">
     <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./Valoplay.png"  />
@@ -37,7 +37,7 @@ function PortfolioPage() {
     </Link>
     </Col>
 
-    <Col lg={4} md={12} className="fadeInLeft3 d-flex justify-content-center">
+    <Col lg={4} md={12} className="d-flex justify-content-center">
     
     <Card className="cardStyle">
     <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./MNL.png"  />
@@ -49,7 +49,7 @@ function PortfolioPage() {
     </Col>
 
 
-    <Col lg={4} md={12} className="fadeInLeft4 d-flex justify-content-center">
+    <Col lg={4} md={12} className="d-flex justify-content-center">
     <Link className="link" to={'https://winrate-calculator.netlify.app/'}   target="_blank">
     <Card className="cardStyle">
     <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./winrateCal.png"  />
@@ -60,12 +60,14 @@ function PortfolioPage() {
     </Link>
     </Col>
 
-    <Col lg={4} md={12} className="fadeInLeft5 d-flex justify-content-center">
+    <Col lg={4} md={12} className="d-flex justify-content-center">
     <Link className="link" to={'https://main--hustlergame.netlify.app/'}   target="_blank">
     <Card className="cardStyle">
+   
     <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./HustlerGame.png"  />
+
     <Card.Body>
-    <Card.Title className="card-title">Hustler</Card.Title>    
+    <Card.Title className="card-title">Hustler</Card.Title>   
     </Card.Body>
     </Card>
     </Link>

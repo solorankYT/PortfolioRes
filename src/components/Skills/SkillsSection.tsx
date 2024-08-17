@@ -8,7 +8,7 @@ return(
   <Row >
     
   <Col md={4} sm={6} className="d-flex justify-content-center">
-  <Card style={{ width: '18rem' }} className="d-flex  align-items-center card-background-color">
+  <Card style={{ width: '18rem' }} className="d-flex  align-items-center background-color">
     <Card.Img variant="top" src="./html-icon.png"  className="card-img-custom"/> 
       <Card.Body className="d-flex  align-items-center ">
       <Card.Title  className="text-white">HTML</Card.Title>
@@ -17,7 +17,7 @@ return(
 </Col>
 
     <Col md={4} sm={6}className="d-flex justify-content-center">
-    <Card style={{ width: '18rem' }} className="d-flex  align-items-center card-background-color">
+    <Card style={{ width: '18rem' }} className="d-flex  align-items-center background-color">
     <Card.Img variant="top" src="./css-icon.png" className="card-img-custom"/>
     <Card.Body className="d-flex  align-items-center ">
       <Card.Title className="text-white">CSS</Card.Title>    
@@ -26,7 +26,7 @@ return(
     </Col>
 
     <Col md={4} sm={6} className="d-flex justify-content-center">
-    <Card style={{ width: '18rem' }} className="d-flex align-items-center card-background-color">
+    <Card style={{ width: '18rem' }} className="d-flex align-items-center background-color">
     <Card.Img variant="top" src="./js-icon.png" className="card-img-custom"/>
     <Card.Body className="d-flex  align-items-center ">
       <Card.Title className="text-white">JAVASCRIPT</Card.Title>    
@@ -35,7 +35,7 @@ return(
     </Col>
 
     <Col md={4} sm={6}className="d-flex justify-content-center">
-    <Card style={{ width: '18rem' }} className="d-flex justify-content-center align-items-center card-background-color">
+    <Card style={{ width: '18rem' }} className="d-flex justify-content-center align-items-center background-color">
     <Card.Img variant="top" src="./boostrap-icon.png" className="card-img-custom"/>
     <Card.Body className="d-flex  align-items-center ">
       <Card.Title className="text-white">BOOTSTRAP</Card.Title>    
@@ -43,7 +43,7 @@ return(
     </Card>
     </Col>
     <Col md={4} sm={6}className="d-flex justify-content-center">
-    <Card style={{ width: '18rem' }} className="d-flex justify-content-center align-items-center card-background-color">
+    <Card style={{ width: '18rem' }} className="d-flex justify-content-center align-items-center background-color">
     <Card.Img variant="top" src="./react-icon.png" className="card-img-custom"/>
     <Card.Body className="d-flex  align-items-center ">
       <Card.Title className="text-white"> REACT</Card.Title>    
@@ -51,7 +51,7 @@ return(
     </Card>
     </Col>
     <Col md={4} sm={6}className="d-flex justify-content-center">
-    <Card style={{ width: '18rem' }} className="d-flex justify-content-center align-items-center card-background-color">
+    <Card style={{ width: '18rem' }} className="d-flex justify-content-center align-items-center background-color">
     <Card.Img variant="top" src="./net-icon.png" className="card-img-custom"/>
     <Card.Body className="d-flex  align-items-center ">
       <Card.Title className="text-white">ASP.NET</Card.Title>    

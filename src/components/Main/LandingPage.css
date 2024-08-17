@@ -1,10 +1,12 @@
 .container-landing{
-  width: 100%;
-  height: 90vh;
+  width: max-content;
+  height: fit-content;
+ margin-top: 15%;
+
 }
 
 .text-color-light{
-  color: rgb(228, 228, 228);
+  color: rgb(138, 135, 135);
 }
 
 .text-max{

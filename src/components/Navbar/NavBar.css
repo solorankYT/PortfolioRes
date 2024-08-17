@@ -85,4 +85,7 @@
     filter: brightness(-2);
    }
    
-   
+
+   .navbar{
+    margin: 1.5em;
+   }
