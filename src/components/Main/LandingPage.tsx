@@ -1,8 +1,7 @@
-import { Col,  Container, Row } from "react-bootstrap";
-import Image from 'react-bootstrap/Image';
+import { Container } from "react-bootstrap";
 import "./LandingPage.css"
-import { Link } from "react-router-dom";
 import ContactSection from "../Contact/ContactSection";
+
 function LandingPage(){
 return(
 

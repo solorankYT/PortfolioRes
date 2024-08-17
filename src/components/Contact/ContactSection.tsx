@@ -1,6 +1,6 @@
-import { Col, Container, Row } from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import './ContactForm.css'
-import { Link } from "react-router-dom";
+
 
 function ContactSection(){
 return(
