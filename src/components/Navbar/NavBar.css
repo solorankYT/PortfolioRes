@@ -1,4 +1,6 @@
-
+.navbar{
+    margin: 1.5em;
+}
 .text-white a{
     color: #ffffff;
 }
@@ -8,9 +10,10 @@
 }
 
 .link-design {
-    font-size: 24px;
+    font-size: 16px;
     color: #ffffff;
     text-decoration: none;
+   
 }
 
 .disable-link {
@@ -85,7 +88,3 @@
     filter: brightness(-2);
    }
    
-
-   .navbar{
-    margin: 1.5em;
-   }

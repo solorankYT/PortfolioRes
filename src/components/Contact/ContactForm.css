@@ -53,6 +53,19 @@
   }
 
   .contact-icon{
-    margin: 16px;
+   
+    position: relative;
+    display: inline-block;
   }
 
+
+.contact-icon .contact-icon-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contact-icon:hover .contact-icon-hover {
+    display: inline;
+}
