@@ -1,81 +1,64 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import './PortfolioPage.css' ;
 import { Link } from "react-router-dom";
+
+const portfolio =[
+    {
+        Title: "UniTrack",
+        ImageLink: "./Unitrack.png",
+        Link: ""
+    },
+    {
+        Title: "Valoplay",
+        ImageLink: "./Valoplay.png",
+        Link: 'https://valoplay.netlify.app/'
+    },
+    {
+        Title: "Hustler",
+        ImageLink: "./HustlerGame.png",
+        Link: 'https://main--hustlergame.netlify.app/'
+    },
+    {
+        Title: "MNL Flower Shop",
+        ImageLink: "./MNL.png",
+        Link: ""
+    },
+    {
+        Title: "Jose Rizal",
+        ImageLink: "./joserizal.png",
+        Link: ""
+    },
+    {
+        Title: "Win Rate Calculator",
+        ImageLink: "./winrateCal.png",
+        Link: 'https://winrate-calculator.netlify.app/'
+    }
+
+]
+
 function PortfolioPage() {
     return(
         
-        <Container className="container text-center fadeInUp">
-            <h1 className="text-color-primary">Portfolio</h1>
+        <Container className="containerPortfolio text-center fadeInUp">
+            
     <Row>
-    <Col lg={4} md={12}  className="d-flex justify-content-center">
-    <Card className="cardStyle ">
-    <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./Unitrack.png"  />
+        {portfolio.map((portfolio, index) =>(
+    <Col key={index} lg={4} md={12}  className="colPrortfolio d-flex justify-content-center">
+    <Card className="cardStyle px-5">
+        <Link to={portfolio.Link} className="link">
+    <Card.Img  className="card-img" variant="top" src={portfolio.ImageLink} />
     <Card.Body>
-    <Card.Title className="card-title">Unitrack</Card.Title>    
+    <Card.Title className="card-title">{portfolio.Title}</Card.Title>    
     </Card.Body>
-    </Card>
-    </Col>
-
-        
-    <Col lg={4} md={12} className="d-flex justify-content-center">  
-    <Card className="cardStyle">
-    <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./joserizal.png"  />
-    <Card.Body>
-    <Card.Title className="card-title">History of Rizal</Card.Title>    
-    </Card.Body>
-    </Card>
-    </Col>
-  
-    <Col lg={4} md={12} className=" d-flex justify-content-center">
-    <Link className="link" to={'https://valoplay.netlify.app/'} target="_blank">
-    <Card className="cardStyle">
-    <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./Valoplay.png"  />
-    <Card.Body>
-    <Card.Title className="card-title">Valoplay</Card.Title>    
-    </Card.Body>
-    </Card>
     </Link>
+    </Card> 
     </Col>
-
-    <Col lg={4} md={12} className="d-flex justify-content-center">
-    
-    <Card className="cardStyle">
-    <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./MNL.png"  />
-    <Card.Body>
-    <Card.Title className="card-title">MNL Flower Shop</Card.Title>    
-    </Card.Body>
-    </Card>
-   
-    </Col>
-
-
-    <Col lg={4} md={12} className="d-flex justify-content-center">
-    <Link className="link" to={'https://winrate-calculator.netlify.app/'}   target="_blank">
-    <Card className="cardStyle">
-    <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./winrateCal.png"  />
-    <Card.Body>
-    <Card.Title className="card-title">Win rate calculator</Card.Title>    
-    </Card.Body>
-    </Card>
-    </Link>
-    </Col>
-
-    <Col lg={4} md={12} className="d-flex justify-content-center">
-    <Link className="link" to={'https://main--hustlergame.netlify.app/'}   target="_blank">
-    <Card className="cardStyle">
-   
-    <Card.Img  style={{ width: '20em', margin: '0 auto' , padding: '10px'}} variant="top" src="./HustlerGame.png"  />
-
-    <Card.Body>
-    <Card.Title className="card-title">Hustler</Card.Title>   
-    </Card.Body>
-    </Card>
-    </Link>
-    </Col>
-    </Row>
+))} 
+     </Row>
 
     </Container>
     );
 }
 
 export default PortfolioPage
+

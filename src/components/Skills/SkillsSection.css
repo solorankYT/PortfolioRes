@@ -1,24 +1,13 @@
-  .card-background-color{
-    background-color: #264852;
-  }
-
-  .card-text{
-    color: #FFFFFF;
+ .card-text{
     font-family: "Varela", sans-serif;
-    font-weight: 400;
-    font-size: 36spx;
+    font-size: 18px;
     font-style: normal;
-    padding:  0;
+ 
   }
 
-  .card-img-custom {
-    margin: 0 auto;
-    padding: 20px;
-    width: 12em; 
-    height: auto;
-  }
+ 
+ 
 
-  .background-color{
-    background-color:  #45475c;
-   }
-   
+ .skills-section{
+  padding: 100px 0;
+ }

@@ -1,66 +1,101 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
-import './SkillsSection.css'
-function SkillsSection(){
-return(
+import './SkillsSection.css';
 
-  <Container className="text-center container-section my-5 ">
-    <h1 className="text-color-primary">Tech Stack</h1>
-  <Row >
-    
-  <Col md={4} sm={6} className="d-flex justify-content-center">
-  <Card style={{ width: '18rem' }} className="d-flex  align-items-center background-color">
-    <Card.Img variant="top" src="./html-icon.png"  className="card-img-custom"/> 
-      <Card.Body className="d-flex  align-items-center ">
-      <Card.Title  className="text-white">HTML</Card.Title>
-      </Card.Body>
-  </Card>
-</Col>
 
-    <Col md={4} sm={6}className="d-flex justify-content-center">
-    <Card style={{ width: '18rem' }} className="d-flex  align-items-center background-color">
-    <Card.Img variant="top" src="./css-icon.png" className="card-img-custom"/>
-    <Card.Body className="d-flex  align-items-center ">
-      <Card.Title className="text-white">CSS</Card.Title>    
-    </Card.Body>
-    </Card>
-    </Col>
+const skills = [
+{
+  title: "HTML",
+  svgContent:   <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 256 256">
+	              <g fill="none">
+		            <rect width="256" height="256" fill="#e14e1d" rx="60" />
+		            <path fill="#fff" d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z" />
+		            <path fill="#ebebeb" d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z" />
+	              </g>
+                </svg>
+},
+{
+  title: "CSS",
+  svgContent: <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#0277bd" rx="60"/><path fill="#ebebeb" d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"/><path fill="#fff" d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"/></g></svg>
+               
+},
+{
+  title: "JAVASCRIPT",
+  svgContent:  <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#f0db4f" rx="60"/><path fill="#323330" d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"/></g></svg>  
+               
+},
+{
+  title: "BOOTSTRAP",
+  svgContent:  <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 256 256">
+	<g fill="none">
+		<rect width="256" height="256" fill="url(#skillIconsBootstrap0)" rx="60" />
+		<g filter="url(#skillIconsBootstrap2)">
+			<path fill="url(#skillIconsBootstrap1)" d="M131.97 196.157c29.676 0 47.559-14.531 47.559-38.497c0-18.117-12.759-31.232-31.706-33.309v-.754c13.92-2.265 24.843-15.192 24.843-29.628c0-20.57-16.239-33.969-40.986-33.969H76v136.157zM97.653 77.267h28.807c15.66 0 24.553 6.983 24.553 19.627c0 13.493-10.343 21.041-29.096 21.041H97.653zm0 101.623v-44.819h28.613c20.494 0 31.127 7.548 31.127 22.268c0 14.719-10.343 22.551-29.87 22.551z" />
+			<path stroke="#fff" stroke-width="2" d="M131.97 196.157c29.676 0 47.559-14.531 47.559-38.497c0-18.117-12.759-31.232-31.706-33.309v-.754c13.92-2.265 24.843-15.192 24.843-29.628c0-20.57-16.239-33.969-40.986-33.969H76v136.157zM97.653 77.267h28.807c15.66 0 24.553 6.983 24.553 19.627c0 13.493-10.343 21.041-29.096 21.041H97.653zm0 101.623v-44.819h28.613c20.494 0 31.127 7.548 31.127 22.268c0 14.719-10.343 22.551-29.87 22.551z" />
+		</g>
+		<defs>
+			<linearGradient id="skillIconsBootstrap0" x1="0" x2="256" y1="0" y2="256" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#9013fe" />
+				<stop offset="1" stop-color="#6b11f4" />
+			</linearGradient>
+			<linearGradient id="skillIconsBootstrap1" x1="85.793" x2="148.541" y1="68.962" y2="175.084" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#fff" />
+				<stop offset="1" stop-color="#f1e5fc" />
+			</linearGradient>
+			<filter id="skillIconsBootstrap2" width="137.529" height="170.157" x="59" y="47" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+				<feFlood flood-opacity="0" result="BackgroundImageFix" />
+				<feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+				<feOffset dy="4" />
+				<feGaussianBlur stdDeviation="8" />
+				<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+				<feBlend in2="BackgroundImageFix" result="effect1_dropShadow_158_100" />
+				<feBlend in="SourceGraphic" in2="effect1_dropShadow_158_100" result="shape" />
+			</filter>
+		</defs>
+	</g>
+</svg>
+},
+{
+      title:"REACT",
+      svgContent:<svg xmlns="http://www.w3.org/2000/svg" width="112.29px" height="100px" viewBox="0 0 256 228">
+      <path fill="#00d8ff" d="M210.483 73.824a172 172 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171 171 0 0 0-6.375 5.848a156 156 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a171 171 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a146 146 0 0 0 6.921 2.165a168 168 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a146 146 0 0 0 5.342-4.923a168 168 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145 145 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844m-6.365 70.984q-2.102.694-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14m-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a157 157 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345q.785 3.162 1.386 6.193M87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a157 157 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a135 135 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94M50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a135 135 0 0 1-6.318-1.979m12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144 144 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160 160 0 0 1-1.76-7.887m110.427 27.268a348 348 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381 381 0 0 0-7.365-13.322m-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322 322 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18M82.802 87.83a323 323 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a322 322 0 0 0-7.848 12.897m8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321 321 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147m37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486m52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382 382 0 0 0 7.859-13.026a347 347 0 0 0 7.425-13.565m-16.898 8.101a359 359 0 0 1-12.281 19.815a329 329 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310 310 0 0 1-12.513-19.846h.001a307 307 0 0 1-10.923-20.627a310 310 0 0 1 10.89-20.637l-.001.001a307 307 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329 329 0 0 1 12.335 19.695a359 359 0 0 1 11.036 20.54a330 330 0 0 1-11 20.722m22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026q-.518 2.504-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a161 161 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3M128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86" />
+    </svg>
+},
+{
+  title:"ASP.NET",
+  svgContent:<svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 256 256">
+	<g fill="none">
+		<rect width="256" height="256" fill="#512bd4" rx="60" />
+		<path fill="#fff" d="M24.052 168.943q-3.355 0-5.703-2.194Q16 164.498 16 161.402q0-3.151 2.349-5.403q2.348-2.25 5.703-2.251q3.411 0 5.76 2.251q2.404 2.251 2.404 5.403q0 3.096-2.404 5.347q-2.349 2.194-5.76 2.194m89.415-1.238H98.929l-38.304-59.318a26.4 26.4 0 0 1-2.404-4.672h-.336q.447 2.59.447 11.087v52.903H45.471V87H60.96l37.018 57.912q2.349 3.602 3.02 4.953h.223q-.559-3.208-.559-10.863V87h12.805zm62.631 0h-45.014V87h43.225v11.369h-29.916v22.849h27.568v11.312h-27.568v23.863h31.705zm63.973-69.336h-23.038v69.336h-13.309V98.369h-22.982V87h59.329z" />
+	</g>
+</svg>
+}
 
-    <Col md={4} sm={6} className="d-flex justify-content-center">
-    <Card style={{ width: '18rem' }} className="d-flex align-items-center background-color">
-    <Card.Img variant="top" src="./js-icon.png" className="card-img-custom"/>
-    <Card.Body className="d-flex  align-items-center ">
-      <Card.Title className="text-white">JAVASCRIPT</Card.Title>    
-    </Card.Body>
-    </Card>
-    </Col>
+];
 
-    <Col md={4} sm={6}className="d-flex justify-content-center">
-    <Card style={{ width: '18rem' }} className="d-flex justify-content-center align-items-center background-color">
-    <Card.Img variant="top" src="./boostrap-icon.png" className="card-img-custom"/>
-    <Card.Body className="d-flex  align-items-center ">
-      <Card.Title className="text-white">BOOTSTRAP</Card.Title>    
-    </Card.Body>
-    </Card>
-    </Col>
-    <Col md={4} sm={6}className="d-flex justify-content-center">
-    <Card style={{ width: '18rem' }} className="d-flex justify-content-center align-items-center background-color">
-    <Card.Img variant="top" src="./react-icon.png" className="card-img-custom"/>
-    <Card.Body className="d-flex  align-items-center ">
-      <Card.Title className="text-white"> REACT</Card.Title>    
-    </Card.Body>
-    </Card>
-    </Col>
-    <Col md={4} sm={6}className="d-flex justify-content-center">
-    <Card style={{ width: '18rem' }} className="d-flex justify-content-center align-items-center background-color">
-    <Card.Img variant="top" src="./net-icon.png" className="card-img-custom"/>
-    <Card.Body className="d-flex  align-items-center ">
-      <Card.Title className="text-white">ASP.NET</Card.Title>    
-    </Card.Body>
-    </Card>
-    </Col>
-  </Row>
-  </Container>
-);
+
+function SkillsSection() {
+  return (
+    <Container className="skills-section text-center" fluid>
+      <h1 className="text-color-primary  mb-4">Tech Stack</h1>
+      <Row>
+        <Col>
+          <Row>
+          {skills.map  ((skills, index) =>( 
+            <Col key={index} sm={6} md={6} lg={4} className="mb-4">
+              <Card className="d-flex justify-content-center align-items-center">
+                {skills.svgContent}
+                <Card.Body>
+                  <Card.Title className="text-secondary">{skills.title}</Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+ ))}
+</Row>
+ </Col>
+ </Row>
+
+    </Container>
+  );
 }
 
 export default SkillsSection

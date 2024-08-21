@@ -1,25 +1,49 @@
 .containerAbout{
-  margin-top: 50px;
+  margin-top: 1em;
+}
+
+.aboutMe{
+  position: sticky;
+  height: fit-content;
+  
+}
+.offerContainer{
+  padding-top: 100px;
+}
+
+.containerMe{
+  padding: 100px 0;
+  height: fit-content;
+}
+.infoMe{
+  position: fixed;
+}
+
+.offerText{
+  color: aliceblue;
+}
+
+.sideContainer{
+padding-top: 50px;
 }
 
 .AboutText{  
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .text-color-primary{
   color: #78A083;
 }
 .text-color-secondary{
-  color: rgb(239, 239, 240);
+  color: rgba(175, 175, 177, 0.781);
 }
+
+
 .card {
   margin-top: 50px;
- border-radius: 50px;
-}
-
-
-.background-color{
- background-color:  #45475c;
+ background-color: rgba(240, 248, 255, 0);
+ border-style: none;
+ 
 }
 
 
@@ -30,3 +54,4 @@
   0%{transform:translate(0px, 100px); opacity: 0;}
   100%{transform:translate(0px, 0); opacity: 1;}
 }
+
