@@ -18,22 +18,7 @@ const portfolio =[
         ImageLink: "./HustlerGame.png",
         Link: 'https://main--hustlergame.netlify.app/'
     },
-    {
-        Title: "MNL Flower Shop",
-        ImageLink: "./MNL.png",
-        Link: ""
-    },
-    {
-        Title: "Jose Rizal",
-        ImageLink: "./joserizal.png",
-        Link: ""
-    },
-    {
-        Title: "Win Rate Calculator",
-        ImageLink: "./winrateCal.png",
-        Link: 'https://winrate-calculator.netlify.app/'
-    }
-
+   
 ]
 
 function PortfolioPage() {
