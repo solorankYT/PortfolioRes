@@ -20,6 +20,9 @@ function AboutSection(){
           <Col>
         <AboutOffer />
         </Col>
+        <Col>
+        <div className="offerContainer"></div>
+        </Col>
         </Container>
         </Col>
         </Row>

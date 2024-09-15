@@ -2,11 +2,34 @@
   margin-top: 1em;
 }
 
-.aboutMe{
-  position: sticky;
-  height: fit-content;
-  
+
+.containerAbout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
+
+@media (min-width: 999px) {
+  .aboutMe {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 50px; /* Adjust this value to control the distance from the top */
+    height: fit-content; /* Ensure the height adjusts to the content */
+  }
+}
+
+@media (max-width: 991.98px) {
+  .aboutMe {
+    position: static; /* Disable sticky on screens smaller than large */
+  }
+}
+
+
+.sideContainer {
+  margin-left: auto; /* Ensure the side container aligns to the right */
+  width: 100%; /* Adjust as necessary for your layout */
+}
+
 .offerContainer{
   padding-top: 100px;
 }

@@ -16,7 +16,6 @@ function AboutMe(){
         <a className="link-design" href="./MarkFunaResume.docx" download>
         <div className="mt-4 button "><span>Download CV </span></div>
         </a> 
-    
         </Container>
         </>
     );

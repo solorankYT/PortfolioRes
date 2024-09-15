@@ -4,28 +4,16 @@ import { Link } from "react-router-dom";
 
 const portfolio =[
     {
-        Title: "UniTrack",
-        ImageLink: "./Unitrack.png",
-        Link: ""
-    },
-    {
         Title: "Valoplay",
         ImageLink: "./Valoplay.png",
         Link: 'https://valoplay.netlify.app/'
     },
-    {
-        Title: "Hustler",
-        ImageLink: "./HustlerGame.png",
-        Link: 'https://main--hustlergame.netlify.app/'
-    },
-   
 ]
 
 function PortfolioPage() {
     return(
         
-        <Container className="containerPortfolio text-center fadeInUp">
-            
+    <Container className="containerPortfolio text-center fadeInUp">    
     <Row>
         {portfolio.map((portfolio, index) =>(
     <Col key={index} lg={4} md={12}  className="colPrortfolio d-flex justify-content-center">
