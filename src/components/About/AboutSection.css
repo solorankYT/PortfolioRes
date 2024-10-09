@@ -52,6 +52,7 @@ padding-top: 50px;
 
 .AboutText{  
     font-size: 16px;
+    cursor: default;
 }
 
 .text-color-primary{
@@ -78,3 +79,10 @@ padding-top: 50px;
   100%{transform:translate(0px, 0); opacity: 1;}
 }
 
+.text-highlight{
+  color: #78A083;
+}
+
+.text-highlight:hover{
+  text-decoration: underline;
+}
